@@ -59,7 +59,7 @@ const experience = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-slate-50">
+    <section id="experience" className="py-24 bg-slate-50 dark:bg-slate-800/50">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -71,14 +71,13 @@ export default function Experience() {
           <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-3">
             Career Journey
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
             Experience &amp; Education
           </h2>
         </motion.div>
 
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-slate-200" />
+          <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-slate-200 dark:bg-slate-700" />
 
           <div className="space-y-10">
             {experience.map((item, i) => (
@@ -90,27 +89,26 @@ export default function Experience() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="relative pl-12 md:pl-16"
               >
-                {/* Timeline dot */}
                 <div
                   className={`absolute left-0 md:left-2 top-1 w-8 h-8 rounded-full flex items-center justify-center border-2 ${
                     item.type === "work"
                       ? "bg-blue-600 border-blue-600"
-                      : "bg-white border-slate-300"
+                      : "bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-600"
                   }`}
                 >
                   {item.type === "work" ? (
                     <Briefcase size={14} className="text-white" />
                   ) : (
-                    <GraduationCap size={14} className="text-slate-500" />
+                    <GraduationCap size={14} className="text-slate-500 dark:text-slate-400" />
                   )}
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-100 p-6 hover:border-blue-100 hover:shadow-sm transition-all">
+                <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 p-6 hover:border-blue-100 dark:hover:border-blue-800 hover:shadow-sm transition-all">
                   <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
-                    <h3 className="font-bold text-slate-900 text-base">
+                    <h3 className="font-bold text-slate-900 dark:text-white text-base">
                       {item.role}
                     </h3>
-                    <span className="text-xs font-medium bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full whitespace-nowrap">
+                    <span className="text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 px-2.5 py-1 rounded-full whitespace-nowrap">
                       {item.period}
                     </span>
                   </div>
@@ -118,13 +116,13 @@ export default function Experience() {
                   <p className="text-sm font-semibold text-blue-600 mb-0.5">
                     {item.company}
                   </p>
-                  <p className="text-xs text-slate-400 mb-4">{item.location}</p>
+                  <p className="text-xs text-slate-400 dark:text-slate-500 mb-4">{item.location}</p>
 
                   <ul className="space-y-2 mb-4">
                     {item.highlights.map((point, j) => (
                       <li
                         key={j}
-                        className="flex gap-2 text-sm text-slate-600 leading-relaxed"
+                        className="flex gap-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
                       >
                         <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
                         {point}
@@ -137,7 +135,7 @@ export default function Experience() {
                       {item.tech.map((t) => (
                         <span
                           key={t}
-                          className="text-xs font-medium bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-full"
+                          className="text-xs font-medium bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-2.5 py-0.5 rounded-full"
                         >
                           {t}
                         </span>

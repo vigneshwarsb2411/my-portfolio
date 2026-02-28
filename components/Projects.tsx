@@ -13,18 +13,16 @@ const architectureHighlights = [
     role: "Sole architect and execution lead — designed the migration strategy, sequenced service cutovers, and ensured data integrity throughout the transition.",
     impact: "40 microservices · Zero downtime · Full cloud adoption",
     tech: ["Azure", "Kubernetes", "Docker", "Microservices", "Cloud Migration", "CI/CD"],
-    highlight: true,
   },
   {
     icon: <Shield size={22} className="text-blue-600" />,
     title: "OAuth-Secured APIM Gateway — Apigee",
     company: "Mr. Cooper · Technical Architect",
     description:
-      "Designed and implemented a large-scale OAuth 2.0-based API Management gateway using Apigee, securing and governing API access across the entire loan servicing ecosystem covering 5+ million loans. Established org-wide API security standards, token lifecycle management, and developer portal integration.",
+      "Designed and implemented a large-scale OAuth 2.0-based API Management gateway using Apigee, securing and governing API access across the entire loan servicing ecosystem covering 5+ million loans.",
     role: "Lead architect for the Apigee integration and OAuth security model — defined gateway policies, rate limits, and authentication flows.",
     impact: "5M+ loans governed · Enterprise-wide API security",
     tech: ["Apigee", "OAuth 2.0", "API Management", "Security", "Azure", "Node.js"],
-    highlight: true,
   },
   {
     icon: <Rocket size={22} className="text-blue-600" />,
@@ -35,18 +33,16 @@ const architectureHighlights = [
     role: "Architected the integration layer — data mapping, API contracts, and orchestration workflows to ensure seamless loan transfer and servicing continuity.",
     impact: "Cross-platform integration at mortgage industry scale",
     tech: ["Microservices", "REST APIs", "Azure", "Node.js", "Data Integration"],
-    highlight: true,
   },
   {
     icon: <Globe size={22} className="text-blue-600" />,
     title: "White-Label Servicing Websites",
     company: "Mr. Cooper · Technical Architect",
     description:
-      "Architected and launched a suite of new white-label mortgage servicing websites, enabling Mr. Cooper to power branded digital experiences for partner servicers on a shared platform with configurable theming, content, and workflows.",
+      "Architected and launched a suite of new white-label mortgage servicing websites, enabling Mr. Cooper to power branded digital experiences for partner servicers on a shared platform.",
     role: "Led the architecture of the white-label platform — multi-tenancy design, theme system, feature flagging, and CI/CD pipeline setup.",
     impact: "Multiple brand launches on a single unified platform",
     tech: ["React.js", "Next.js", "Node.js", "Azure", "Multi-tenancy", "Tailwind CSS"],
-    highlight: true,
   },
 ];
 
@@ -95,7 +91,7 @@ const engineeringProjects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-slate-50">
+    <section id="projects" className="py-24 bg-slate-50 dark:bg-slate-800/50">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -107,7 +103,7 @@ export default function Projects() {
           <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-3">
             Featured Work
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
             Projects &amp; Impact
           </h2>
         </motion.div>
@@ -131,36 +127,36 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="bg-white rounded-2xl border border-blue-100 p-7 flex flex-col hover:shadow-lg hover:border-blue-200 transition-all"
+                className="bg-white dark:bg-slate-800 rounded-2xl border border-blue-100 dark:border-blue-900/50 p-7 flex flex-col hover:shadow-lg hover:border-blue-200 dark:hover:border-blue-700 transition-all"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-blue-50 dark:bg-blue-900/40 rounded-xl flex items-center justify-center flex-shrink-0">
                     {project.icon}
                   </div>
-                  <ExternalLink size={15} className="text-slate-200" />
+                  <ExternalLink size={15} className="text-slate-200 dark:text-slate-600" />
                 </div>
 
-                <h3 className="font-bold text-slate-900 text-base leading-snug mb-1">
+                <h3 className="font-bold text-slate-900 dark:text-white text-base leading-snug mb-1">
                   {project.title}
                 </h3>
                 <p className="text-xs font-semibold text-blue-600 mb-3">
                   {project.company}
                 </p>
 
-                <p className="text-sm text-slate-600 leading-relaxed mb-3">
+                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
                   {project.description}
                 </p>
 
-                <div className="bg-slate-50 rounded-xl p-3 mb-4">
+                <div className="bg-slate-50 dark:bg-slate-700/50 rounded-xl p-3 mb-4">
                   <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">
                     Architect&apos;s Role
                   </p>
-                  <p className="text-sm text-slate-700">{project.role}</p>
+                  <p className="text-sm text-slate-700 dark:text-slate-300">{project.role}</p>
                 </div>
 
                 <div className="flex items-center gap-2 mb-4">
                   <span className="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0" />
-                  <span className="text-xs font-semibold text-slate-700">
+                  <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
                     {project.impact}
                   </span>
                 </div>
@@ -169,7 +165,7 @@ export default function Projects() {
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-xs font-medium bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-full"
+                      className="text-xs font-medium bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-2.5 py-0.5 rounded-full"
                     >
                       {t}
                     </span>
@@ -183,7 +179,7 @@ export default function Projects() {
         {/* Engineering Projects */}
         <div>
           <div className="flex items-center gap-3 mb-6 mt-12">
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+            <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">
               Engineering Projects
             </span>
           </div>
@@ -196,31 +192,31 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.07 }}
-                className="bg-white rounded-2xl border border-slate-100 p-5 flex flex-col hover:border-slate-200 hover:shadow-sm transition-all"
+                className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 p-5 flex flex-col hover:border-slate-200 dark:hover:border-slate-600 hover:shadow-sm transition-all"
               >
                 <div className="mb-3">{project.icon}</div>
-                <h3 className="font-bold text-slate-800 text-sm mb-0.5 leading-snug">
+                <h3 className="font-bold text-slate-800 dark:text-white text-sm mb-0.5 leading-snug">
                   {project.title}
                 </h3>
-                <p className="text-xs text-slate-400 mb-3">{project.company}</p>
-                <p className="text-xs text-slate-600 leading-relaxed mb-3 flex-1">
+                <p className="text-xs text-slate-400 dark:text-slate-500 mb-3">{project.company}</p>
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-3 flex-1">
                   {project.description}
                 </p>
                 <div className="flex items-center gap-1.5 mb-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-slate-400 flex-shrink-0" />
-                  <span className="text-xs text-slate-500">{project.impact}</span>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">{project.impact}</span>
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {project.tech.slice(0, 4).map((t) => (
                     <span
                       key={t}
-                      className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full"
+                      className="text-xs bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-full"
                     >
                       {t}
                     </span>
                   ))}
                   {project.tech.length > 4 && (
-                    <span className="text-xs bg-slate-100 text-slate-400 px-2 py-0.5 rounded-full">
+                    <span className="text-xs bg-slate-100 dark:bg-slate-700 text-slate-400 px-2 py-0.5 rounded-full">
                       +{project.tech.length - 4}
                     </span>
                   )}

@@ -47,7 +47,7 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-white">
+    <section id="skills" className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -59,7 +59,7 @@ export default function Skills() {
           <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-3">
             Toolkit
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
             Skills &amp; Technologies
           </h2>
         </motion.div>
@@ -72,7 +72,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
-              className="bg-slate-50 border border-slate-100 rounded-2xl p-6 hover:border-blue-100 hover:bg-blue-50/30 transition-colors"
+              className="bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-2xl p-6 hover:border-blue-100 dark:hover:border-blue-700 hover:bg-blue-50/30 dark:hover:bg-blue-900/20 transition-colors"
             >
               <h3 className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-4">
                 {cat.category}
@@ -81,7 +81,7 @@ export default function Skills() {
                 {cat.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-sm text-slate-700 bg-white border border-slate-200 px-3 py-1 rounded-lg font-medium"
+                    className="text-sm text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 px-3 py-1 rounded-lg font-medium"
                   >
                     {skill}
                   </span>

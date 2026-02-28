@@ -32,7 +32,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -43,7 +43,7 @@ export default function About() {
           <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-3">
             About Me
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-6">
             Turning complexity into
             <br />
             <span className="text-blue-600">elegant systems</span>
@@ -57,16 +57,16 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="space-y-5 text-slate-600 leading-relaxed"
+            className="space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed"
           >
             <p>
-              I&apos;m <strong className="text-slate-800">Vigneshwar Balakrishnan</strong>, a
-              Full Stack Technical Architect with over <strong className="text-slate-800">12 years</strong> of
+              I&apos;m <strong className="text-slate-800 dark:text-white">Vigneshwar Balakrishnan</strong>, a
+              Full Stack Technical Architect with over <strong className="text-slate-800 dark:text-white">12 years</strong> of
               experience building and scaling enterprise-grade web applications.
             </p>
             <p>
-              Currently serving as <strong className="text-slate-800">Principal Information Systems Engineer</strong> at{" "}
-              <strong className="text-slate-800">Mr. Cooper</strong> — America&apos;s #1 non-banking home
+              Currently serving as <strong className="text-slate-800 dark:text-white">Principal Information Systems Engineer</strong> at{" "}
+              <strong className="text-slate-800 dark:text-white">Mr. Cooper</strong> — America&apos;s #1 non-banking home
               loan servicer — in Dallas, Texas, where I architect and lead
               high-impact digital transformation initiatives.
             </p>
@@ -114,13 +114,13 @@ export default function About() {
             {highlights.map((item) => (
               <div
                 key={item.title}
-                className="bg-slate-50 border border-slate-100 rounded-2xl p-5 hover:border-blue-100 hover:bg-blue-50/40 transition-colors"
+                className="bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-2xl p-5 hover:border-blue-100 dark:hover:border-blue-800 hover:bg-blue-50/40 dark:hover:bg-blue-900/20 transition-colors"
               >
                 <div className="mb-3">{item.icon}</div>
-                <h3 className="font-semibold text-slate-800 mb-1.5 text-sm">
+                <h3 className="font-semibold text-slate-800 dark:text-white mb-1.5 text-sm">
                   {item.title}
                 </h3>
-                <p className="text-xs text-slate-500 leading-relaxed">
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                   {item.description}
                 </p>
               </div>
