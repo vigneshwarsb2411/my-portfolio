@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     category: "Languages",
-    skills: ["JavaScript", "TypeScript", "GraphQL", "HTML5", "CSS3"],
+    skills: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
   },
   {
     category: "Frontend",
@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express.js", "Seneca.js", "REST APIs", "GraphQL APIs"],
+    skills: ["Node.js", "Express.js", "Seneca.js", "REST APIs"],
   },
   {
     category: "Databases",
@@ -38,6 +38,10 @@ const skillCategories = [
   {
     category: "Practices",
     skills: ["Agile / Scrum", "Performance Optimization", "Team Leadership", "Technical Mentoring", "Code Review"],
+  },
+  {
+    category: "AI & Productivity Tools",
+    skills: ["Claude Code", "GitHub Copilot"],
   },
   {
     category: "Certifications",
