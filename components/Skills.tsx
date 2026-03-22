@@ -33,7 +33,7 @@ const skillCategories = [
   },
   {
     category: "Architecture",
-    skills: ["Microservices", "Event-Driven Architecture", "Design Patterns", "Clean Code", "Distributed Systems", "Cloud Migration"],
+    skills: ["Microservices", "Scalable Microservices", "Event-Driven Architecture", "Design Patterns", "Clean Code", "Distributed Systems", "Multi-Tenant Systems", "White-Label Products", "Cloud Migration"],
   },
   {
     category: "Practices",

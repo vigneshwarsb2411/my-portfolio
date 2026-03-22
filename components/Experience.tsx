@@ -12,13 +12,13 @@ const experience = [
     type: "work",
     highlights: [
       "Serve as Technical Architect and Principal Information Systems Engineer at America's #1 non-banking home loan servicer.",
-      "Architected and executed a zero-downtime migration of on-premises DB servers and 40 microservices to the cloud — designed the full phased strategy and led end-to-end execution.",
+      "Architected and executed a zero-downtime migration of on-premises DB servers and 40 scalable, distributed microservices to the cloud — designed the full phased strategy and led end-to-end execution.",
       "Designed and implemented an enterprise-scale OAuth 2.0 APIM gateway using Apigee, securing API access across 5M+ loans with org-wide authentication standards.",
       "Led the successful Rocket Mortgage integration — designed API contracts, data mapping, and orchestration workflows between two of the largest US mortgage platforms.",
-      "Architected and launched multi-brand white-label mortgage servicing websites on a shared multi-tenant platform.",
+      "Architected and launched multi-brand white-label mortgage servicing products on a shared multi-tenant platform, enabling branded digital experiences for partner servicers at scale.",
       "Spearheaded Forbearance, Payments Solutions, Digital Home Advisor, and One-Time Links as Technical Lead before transitioning to architect role.",
     ],
-    tech: ["React", "Node.js", "Apigee", "OAuth 2.0", "Azure", "Kubernetes", "Docker", "Microservices", "GCP", "Redis"],
+    tech: ["React", "Node.js", "Apigee", "OAuth 2.0", "Azure", "Kubernetes", "Docker", "Microservices", "GCP", "Redis", "Distributed Systems", "Multi-Tenancy"],
   },
   {
     company: "Verizon Data Services India",

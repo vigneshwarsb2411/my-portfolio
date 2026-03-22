@@ -63,9 +63,9 @@ export default function Hero() {
             {/* Summary */}
             <p className="max-w-xl text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-10">
               12+ years architecting and delivering high-scale full-stack solutions
-              across fintech and enterprise. I design event-driven microservices,
-              cloud-native platforms, and developer experiences that power
-              millions of users.
+              across fintech and enterprise. I design scalable distributed microservices,
+              multi-tenant platforms, white-label products, and developer experiences
+              that power millions of users.
             </p>
 
             {/* CTAs */}

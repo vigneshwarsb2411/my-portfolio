@@ -9,7 +9,7 @@ const architectureHighlights = [
     title: "Zero-Downtime OnPrem → Cloud Migration",
     company: "Mr. Cooper · Technical Architect",
     description:
-      "Architected and personally executed the full migration of on-premises database servers and 40 interdependent microservices to the cloud with zero downtime. Required meticulous planning, phased execution strategy, rollback safeguards, and cross-team coordination across infrastructure and application teams.",
+      "Architected and personally executed the full migration of on-premises database servers and 40 interdependent scalable, distributed microservices to the cloud with zero downtime. Required meticulous planning, phased execution strategy, rollback safeguards, and cross-team coordination across infrastructure and application teams.",
     role: "Sole architect and execution lead — designed the migration strategy, sequenced service cutovers, and ensured data integrity throughout the transition.",
     impact: "40 microservices · Zero downtime · Full cloud adoption",
     tech: ["Azure", "Kubernetes", "Docker", "Microservices", "Cloud Migration", "CI/CD"],
@@ -39,9 +39,9 @@ const architectureHighlights = [
     title: "White-Label Servicing Websites",
     company: "Mr. Cooper · Technical Architect",
     description:
-      "Architected and launched a suite of new white-label mortgage servicing websites, enabling Mr. Cooper to power branded digital experiences for partner servicers on a shared platform.",
+      "Architected white-label mortgage servicing products on a shared multi-tenant platform, enabling branded digital experiences for partner servicers at scale.",
     role: "Led the architecture of the white-label platform — multi-tenancy design, theme system, feature flagging, and CI/CD pipeline setup.",
-    impact: "Multiple brand launches on a single unified platform",
+    impact: "Multiple brand launches · Single multi-tenant platform",
     tech: ["React.js", "Next.js", "Node.js", "Azure", "Multi-tenancy", "Tailwind CSS"],
   },
 ];
