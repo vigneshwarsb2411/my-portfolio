@@ -1,48 +1,58 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layers, Shield, Globe, Rocket, Cloud, ExternalLink } from "lucide-react";
+import { Layers, Shield, Globe, Rocket, Cloud, ExternalLink, Zap } from "lucide-react";
 
 const architectureHighlights = [
   {
     icon: <Cloud size={22} className="text-blue-600" />,
     title: "Zero-Downtime OnPrem → Cloud Migration",
-    company: "Mr. Cooper · Technical Architect",
+    company: "Rocket Companies · Principal Architect",
     description:
-      "Architected and personally executed the full migration of on-premises database servers and 40 interdependent scalable, distributed microservices to the cloud with zero downtime. Required meticulous planning, phased execution strategy, rollback safeguards, and cross-team coordination across infrastructure and application teams.",
-    role: "Sole architect and execution lead — designed the migration strategy, sequenced service cutovers, and ensured data integrity throughout the transition.",
+      "Architected and personally executed the full migration of on-premises database servers and 40 interdependent scalable, distributed microservices to the cloud with zero downtime using the Strangler Fig pattern — phased execution strategy, rollback safeguards, ADRs, and cross-team coordination across infrastructure and application teams.",
+    role: "Sole architect and execution lead — designed the migration strategy using Strangler Fig, sequenced service cutovers, authored ADRs, and ensured data integrity throughout the transition.",
     impact: "40 microservices · Zero downtime · Full cloud adoption",
-    tech: ["Azure", "Kubernetes", "Docker", "Microservices", "Cloud Migration", "CI/CD"],
+    tech: ["Strangler Fig", "Azure", "GCP", "Kubernetes", "Docker", "Microservices", "Cloud Migration", "CI/CD"],
   },
   {
     icon: <Shield size={22} className="text-blue-600" />,
     title: "OAuth-Secured APIM Gateway — Apigee",
-    company: "Mr. Cooper · Technical Architect",
+    company: "Rocket Companies · Principal Architect",
     description:
-      "Designed and implemented a large-scale OAuth 2.0-based API Management gateway using Apigee, securing and governing API access across the entire loan servicing ecosystem covering 5+ million loans.",
-    role: "Lead architect for the Apigee integration and OAuth security model — defined gateway policies, rate limits, and authentication flows.",
-    impact: "5M+ loans governed · Enterprise-wide API security",
+      "Designed and implemented a large-scale OAuth 2.0-based API Management gateway using Apigee — reduced API latency by 80%, securing and governing API access across the entire loan servicing ecosystem covering 5+ million loans.",
+    role: "Lead architect for the Apigee integration and OAuth security model — defined gateway policies, rate limits, and authentication flows. Reduced API latency by 80% and established org-wide authentication standards.",
+    impact: "80% API latency reduction · 5M+ loans governed · Enterprise-wide API security",
     tech: ["Apigee", "OAuth 2.0", "API Management", "Security", "Azure", "Node.js"],
+  },
+  {
+    icon: <Zap size={22} className="text-blue-600" />,
+    title: "Event-Driven Payment Architecture",
+    company: "Rocket Companies · Principal Architect",
+    description:
+      "Designed event-driven HELOC and Mortgage payment solutions using Outbox Pattern for guaranteed message delivery and Kafka event streaming for real-time processing. Eliminated dual-write inconsistencies across distributed payment services.",
+    role: "Designed the end-to-end event architecture — Outbox Pattern implementation, Kafka topic strategy, consumer group design, and idempotency guarantees across payment services.",
+    impact: "Guaranteed message delivery · Real-time payment processing at scale",
+    tech: ["Kafka", "Outbox Pattern", "Event Streaming", "Distributed Systems"],
   },
   {
     icon: <Rocket size={22} className="text-blue-600" />,
     title: "Rocket Mortgage Integration",
-    company: "Mr. Cooper · Technical Architect",
+    company: "Rocket Companies · Principal Architect",
     description:
-      "Led the successful technical integration between Mr. Cooper and Rocket Mortgage, aligning complex loan data models, APIs, and servicing workflows across two of the largest players in the US mortgage industry.",
-    role: "Architected the integration layer — data mapping, API contracts, and orchestration workflows to ensure seamless loan transfer and servicing continuity.",
+      "Led the technical integration between Mr. Cooper and Rocket Mortgage — aligned complex loan data models, APIs, and servicing workflows across two of the largest US mortgage platforms using the Saga pattern for distributed transaction coordination.",
+    role: "Architected the integration layer — data mapping, API contracts, and Saga-based orchestration workflows ensuring seamless loan transfer and eventual consistency across platforms.",
     impact: "Cross-platform integration at mortgage industry scale",
-    tech: ["Microservices", "REST APIs", "Azure", "Node.js", "Spring Boot", "Data Integration"],
+    tech: ["Saga Pattern", "Microservices", "REST APIs", "Azure", "Node.js", "Spring Boot", "Data Integration"],
   },
   {
     icon: <Globe size={22} className="text-blue-600" />,
     title: "White-Label Servicing Websites",
-    company: "Mr. Cooper · Technical Architect",
+    company: "Rocket Companies · Principal Architect",
     description:
-      "Architected white-label mortgage servicing products on a shared multi-tenant platform, enabling branded digital experiences for partner servicers at scale.",
-    role: "Led the architecture of the white-label platform — multi-tenancy design, theme system, feature flagging, and CI/CD pipeline setup.",
+      "Architected white-label mortgage servicing products on a shared multi-tenant platform using CQRS and Circuit Breaker patterns, enabling branded digital experiences for partner servicers at scale.",
+    role: "Led the architecture of the white-label platform — multi-tenancy design, theme system, CQRS implementation, Circuit Breaker patterns, and CI/CD pipeline setup.",
     impact: "Multiple brand launches · Single multi-tenant platform",
-    tech: ["React.js", "Next.js", "Node.js", "Azure", "Multi-tenancy", "Tailwind CSS"],
+    tech: ["React.js", "Next.js", "Node.js", "Azure", "CQRS", "Circuit Breaker", "Multi-tenancy", "Tailwind CSS"],
   },
 ];
 
@@ -50,7 +60,7 @@ const engineeringProjects = [
   {
     icon: <Layers size={18} className="text-indigo-500" />,
     title: "Forbearance Application",
-    company: "Mr. Cooper",
+    company: "Rocket Companies",
     description:
       "Pandemic-era loan relief platform enabling customers to pause mortgage payments and enter modification workflows. Reached 100K+ homeowners during COVID-19.",
     role: "Led complex UI module development and distributed service integration.",
@@ -60,7 +70,7 @@ const engineeringProjects = [
   {
     icon: <Layers size={18} className="text-indigo-500" />,
     title: "Digital Home Advisor & One-Time Links",
-    company: "Mr. Cooper",
+    company: "Rocket Companies",
     description:
       "Customer self-service platform with live chat, digital advisory, and secure one-time access links to drive digital adoption.",
     role: "Designed and built the Messaging System, Live Chat, MFA flows, and one-time link infrastructure.",
@@ -115,7 +125,7 @@ export default function Projects() {
               Architecture Highlights
             </span>
             <span className="text-xs bg-blue-600 text-white font-semibold px-2 py-0.5 rounded-full">
-              Technical Architect · Mr. Cooper
+              Principal Architect · Rocket Companies
             </span>
           </div>
 

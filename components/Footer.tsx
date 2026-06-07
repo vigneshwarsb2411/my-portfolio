@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="text-white font-bold text-lg">
             VSB<span className="text-blue-400">.</span>
           </p>
-          <p className="text-sm mt-1">Technical Architect · Dallas, TX</p>
+          <p className="text-sm mt-1">Principal Architect · Dallas, TX → Chennai, India</p>
         </div>
 
         <div className="flex items-center gap-5">

@@ -45,7 +45,11 @@ const skillCategories = [
   },
   {
     category: "Certifications",
-    skills: ["MERN Stack Developer — NIIT Stackroute"],
+    skills: [
+      "MERN Stack Developer — NIIT Stackroute",
+      "Prompt Engineering & Programming with OpenAI — Columbia University",
+      "AWS Solutions Architect (In Progress)",
+    ],
   },
 ];
 

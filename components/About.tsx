@@ -66,9 +66,8 @@ export default function About() {
             </p>
             <p>
               Currently serving as <strong className="text-slate-800 dark:text-white">Principal Information Systems Engineer</strong> at{" "}
-              <strong className="text-slate-800 dark:text-white">Mr. Cooper</strong> — America&apos;s #1 non-banking home
-              loan servicer — in Dallas, Texas, where I architect and lead
-              high-impact digital transformation initiatives.
+              <strong className="text-slate-800 dark:text-white">Rocket Companies (Formerly Mr. Cooper)</strong> — in Dallas, Texas, architecting
+              high-impact digital transformation initiatives across fintech and enterprise mortgage platforms.
             </p>
             <p>
               My expertise spans the full delivery lifecycle: from whiteboarding
