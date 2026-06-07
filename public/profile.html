@@ -30,7 +30,7 @@
     header {
       background: #1e3a5f;
       color: #fff;
-      padding: 22px 28px 18px;
+      padding: 14px 24px 12px;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
@@ -70,13 +70,13 @@
 
     .stats {
       display: flex;
-      gap: 24px;
-      margin-top: 14px;
-      padding-top: 14px;
+      gap: 18px;
+      margin-top: 8px;
+      padding-top: 8px;
       border-top: 1px solid rgba(255,255,255,0.12);
     }
     .stat { text-align: center; }
-    .stat .val { font-size: 14pt; font-weight: 800; color: #60a5fa; }
+    .stat .val { font-size: 12pt; font-weight: 800; color: #60a5fa; }
     .stat .lbl { font-size: 7pt; color: #94a3b8; letter-spacing: 0.04em; text-transform: uppercase; margin-top: 1px; }
 
     /* ── Body columns ─────────────────────────────────────── */
@@ -89,10 +89,10 @@
     aside {
       background: #f8fafc;
       border-right: 1px solid #e2e8f0;
-      padding: 18px 14px;
+      padding: 12px 10px;
     }
 
-    .sidebar-section { margin-bottom: 16px; }
+    .sidebar-section { margin-bottom: 10px; }
     .sidebar-section:last-child { margin-bottom: 0; }
 
     .sidebar-label {
@@ -133,10 +133,10 @@
 
     /* ── Main content ─────────────────────────────────────── */
     main {
-      padding: 18px 22px;
+      padding: 12px 18px;
     }
 
-    section { margin-bottom: 16px; }
+    section { margin-bottom: 12px; }
     section:last-child { margin-bottom: 0; }
 
     .section-label {
@@ -151,7 +151,7 @@
     }
 
     /* Experience */
-    .exp-item { margin-bottom: 11px; }
+    .exp-item { margin-bottom: 7px; }
     .exp-item:last-child { margin-bottom: 0; }
 
     .exp-header {
@@ -216,12 +216,12 @@
     .proj-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 7px;
+      gap: 5px;
     }
     .proj-item {
       border: 1px solid #e2e8f0;
       border-radius: 6px;
-      padding: 8px 10px;
+      padding: 6px 8px;
     }
     .proj-title {
       font-size: 8.2pt;
@@ -254,7 +254,11 @@
 
     @media print {
       @page { margin: 0; size: A4; }
-      body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        zoom: 0.82;
+      }
       .page { width: 100%; }
     }
   </style>
@@ -282,7 +286,6 @@
       <div><a href="mailto:vigneshwar2411@gmail.com">vigneshwar2411@gmail.com</a></div>
       <div><a href="https://www.linkedin.com/in/vsb2411">linkedin.com/in/vsb2411</a></div>
       <div><a href="https://github.com/Vigneshwar2411">github.com/Vigneshwar2411</a></div>
-      <div style="margin-top:6px; color:#60a5fa; font-weight:600;">Open to Architecture Consulting</div>
     </div>
   </header>
 
@@ -319,6 +322,7 @@
           <span class="pill">Node.js</span>
           <span class="pill">Express.js</span>
           <span class="pill">Seneca.js</span>
+          <span class="pill">Spring Boot</span>
           <span class="pill">REST APIs</span>
         </div>
       </div>
@@ -486,6 +490,7 @@
             <div class="proj-company">Mr. Cooper · Technical Architect</div>
             <div class="proj-desc">Architected the integration layer — data mapping, API contracts, and orchestration workflows enabling seamless loan transfer between two of the largest US mortgage platforms.</div>
             <div class="proj-impact">Mortgage industry scale cross-platform integration</div>
+            <div class="tech-row"><span class="tech-tag">Spring Boot</span><span class="tech-tag">REST APIs</span><span class="tech-tag">Node.js</span><span class="tech-tag">Azure</span></div>
           </div>
 
           <div class="proj-item">

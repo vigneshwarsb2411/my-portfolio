@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express.js", "Seneca.js", "REST APIs"],
+    skills: ["Node.js", "Express.js", "Seneca.js", "Spring Boot", "REST APIs"],
   },
   {
     category: "Databases",

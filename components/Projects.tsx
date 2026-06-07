@@ -32,7 +32,7 @@ const architectureHighlights = [
       "Led the successful technical integration between Mr. Cooper and Rocket Mortgage, aligning complex loan data models, APIs, and servicing workflows across two of the largest players in the US mortgage industry.",
     role: "Architected the integration layer — data mapping, API contracts, and orchestration workflows to ensure seamless loan transfer and servicing continuity.",
     impact: "Cross-platform integration at mortgage industry scale",
-    tech: ["Microservices", "REST APIs", "Azure", "Node.js", "Data Integration"],
+    tech: ["Microservices", "REST APIs", "Azure", "Node.js", "Spring Boot", "Data Integration"],
   },
   {
     icon: <Globe size={22} className="text-blue-600" />,
