@@ -11,10 +11,10 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      font-size: 9.5pt;
+      font-size: 10.5pt;
       color: #1e293b;
       background: #fff;
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
     /* ── Layout ───────────────────────────────────────────── */
@@ -257,7 +257,7 @@
       body {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
-        zoom: 0.82;
+        zoom: 0.90;
       }
       .page { width: 100%; }
     }
@@ -356,7 +356,7 @@
         <div class="pills">
           <span class="pill">Apigee</span>
           <span class="pill">OAuth 2.0</span>
-          <span class="pill">API Mgmt</span>
+          <span class="pill">Azure API Mgmt</span>
           <span class="pill">JWT</span>
           <span class="pill">MFA</span>
         </div>
@@ -373,6 +373,18 @@
           <span class="pill">White-Label Products</span>
           <span class="pill">Cloud Migration</span>
           <span class="pill">Design Patterns</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Monitoring &amp; Observability</div>
+        <div class="pills">
+          <span class="pill">New Relic</span>
+          <span class="pill">Dynatrace</span>
+          <span class="pill">Azure App Insights</span>
+          <span class="pill">Splunk</span>
+          <span class="pill">Graylog</span>
+          <span class="pill">Airbrake</span>
         </div>
       </div>
 
@@ -422,7 +434,7 @@
           <div style="font-size:7.5pt; font-style:italic; color:#64748b; margin:3px 0 6px;">Progressed through 5 levels: Software Engineer I → Software Engineer II → Senior Software Engineer → Lead Engineer → Principal Architect</div>
           <ul class="bullets">
             <li>Architected zero-downtime cloud migration using Strangler Fig pattern — phased 40 interdependent microservices and on-prem DB servers to Azure/GCP, designing rollback safeguards, ADRs, and cross-team execution playbooks.</li>
-            <li>Designed enterprise-scale OAuth 2.0 API Management gateway via Apigee — reduced API latency by 80%, governed API security across 5M+ loans, and established org-wide authentication standards adopted across all platforms.</li>
+            <li>Designed enterprise-scale OAuth 2.0 API Management gateway via Azure APIM and Apigee — reduced API latency by 80%, governed API security across 5M+ loans, and established org-wide authentication standards adopted across all platforms.</li>
             <li>Architected event-driven HELOC and Mortgage Payment solutions — implemented Outbox Pattern for guaranteed at-least-once delivery and Kafka-based event streaming pipelines for real-time payment processing at scale.</li>
             <li>Led Rocket Mortgage platform integration — API contracts, data mapping, and Saga pattern orchestration workflows to coordinate distributed transactions between two of the largest US mortgage platforms.</li>
             <li>Architected multi-brand white-label mortgage servicing platform on a shared multi-tenant architecture; delivered Forbearance, Payments, Digital Home Advisor, and One-Time Links as Technical Lead using CQRS and Circuit Breaker patterns.</li>
@@ -471,45 +483,37 @@
 
           <div class="proj-item">
             <div class="proj-title">Zero-Downtime Cloud Migration</div>
-            <div class="proj-company">Rocket Companies · Principal Architect</div>
-            <div class="proj-desc">Sole architect &amp; execution lead for migrating on-prem DB servers and 40 scalable, distributed microservices to the cloud with zero downtime — phased strategy, rollback safeguards, cross-team coordination.</div>
-            <div class="proj-impact">40 microservices · Full cloud adoption</div>
+            <div class="proj-desc">Phased 40 interdependent microservices from on-prem to Azure/GCP using Strangler Fig pattern with rollback safeguards and ADRs.</div>
+            <div class="proj-impact">40 microservices · Zero downtime · Full cloud adoption</div>
           </div>
 
           <div class="proj-item">
             <div class="proj-title">OAuth APIM Gateway — Apigee</div>
-            <div class="proj-company">Rocket Companies · Principal Architect</div>
-            <div class="proj-desc">Designed &amp; implemented a large-scale OAuth 2.0 API Management gateway via Apigee, governing API security across the entire loan servicing ecosystem.</div>
-            <div class="proj-impact">80% API latency reduction · 5M+ loans governed · Enterprise-wide API security</div>
+            <div class="proj-desc">Designed enterprise OAuth 2.0 gateway via Azure APIM and Apigee, governing API security across the entire loan servicing ecosystem.</div>
+            <div class="proj-impact">80% API latency reduction · 5M+ loans governed</div>
           </div>
 
           <div class="proj-item">
             <div class="proj-title">Forbearance Application</div>
-            <div class="proj-company">Rocket Companies</div>
-            <div class="proj-desc">Pandemic-era loan relief platform enabling customers to pause payments and enter modification workflows during COVID-19. Led complex UI modules and distributed service integration.</div>
+            <div class="proj-desc">Pandemic-era loan relief platform enabling homeowners to pause mortgage payments and enter modification workflows during COVID-19.</div>
             <div class="proj-impact">100K+ customers served</div>
           </div>
 
           <div class="proj-item">
             <div class="proj-title">Rocket Mortgage Integration</div>
-            <div class="proj-company">Rocket Companies · Principal Architect</div>
-            <div class="proj-desc">Architected integration layer — API contracts, data mapping, and Saga-pattern orchestration workflows for distributed transaction coordination between two of the largest US mortgage platforms.</div>
+            <div class="proj-desc">Architected Saga-pattern integration layer with API contracts and orchestration workflows across two of the largest US mortgage platforms.</div>
             <div class="proj-impact">Cross-platform integration at mortgage industry scale</div>
-            <div class="tech-row"><span class="tech-tag">Saga Pattern</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">REST APIs</span><span class="tech-tag">Node.js</span></div>
           </div>
 
           <div class="proj-item">
             <div class="proj-title">Event-Driven Payment Architecture</div>
-            <div class="proj-company">Rocket Companies · Principal Architect</div>
-            <div class="proj-desc">Designed event-driven HELOC and Mortgage payment solutions using Outbox Pattern for guaranteed message delivery and Kafka event streaming for real-time processing. Eliminated dual-write inconsistencies across distributed payment services.</div>
-            <div class="proj-impact">Guaranteed message delivery · Real-time payment at scale</div>
-            <div class="tech-row"><span class="tech-tag">Kafka</span><span class="tech-tag">Outbox Pattern</span><span class="tech-tag">Event Streaming</span><span class="tech-tag">Distributed Systems</span></div>
+            <div class="proj-desc">Designed HELOC and Mortgage payment pipelines using Outbox Pattern for guaranteed delivery and Kafka streaming for real-time processing.</div>
+            <div class="proj-impact">Guaranteed delivery · Real-time payment processing at scale</div>
           </div>
 
           <div class="proj-item">
             <div class="proj-title">White-Label Servicing Products</div>
-            <div class="proj-company">Rocket Companies · Principal Architect</div>
-            <div class="proj-desc">Architected white-label mortgage servicing products on a shared multi-tenant platform, enabling branded digital experiences for partner servicers at scale.</div>
+            <div class="proj-desc">Multi-tenant mortgage servicing platform with CQRS and Circuit Breaker patterns enabling branded digital experiences for multiple partner servicers.</div>
             <div class="proj-impact">Multiple brand launches · Single multi-tenant platform</div>
           </div>
 

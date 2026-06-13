@@ -19,8 +19,8 @@ const architectureHighlights = [
     title: "OAuth-Secured APIM Gateway — Apigee",
     company: "Rocket Companies · Principal Architect",
     description:
-      "Designed and implemented a large-scale OAuth 2.0-based API Management gateway using Apigee — reduced API latency by 80%, securing and governing API access across the entire loan servicing ecosystem covering 5+ million loans.",
-    role: "Lead architect for the Apigee integration and OAuth security model — defined gateway policies, rate limits, and authentication flows. Reduced API latency by 80% and established org-wide authentication standards.",
+      "Designed and implemented a large-scale OAuth 2.0-based API Management gateway using Azure APIM and Apigee — reduced API latency by 80%, securing and governing API access across the entire loan servicing ecosystem covering 5+ million loans.",
+    role: "Lead architect for the Azure APIM and Apigee integration and OAuth security model — defined gateway policies, rate limits, and authentication flows. Reduced API latency by 80% and established org-wide authentication standards.",
     impact: "80% API latency reduction · 5M+ loans governed · Enterprise-wide API security",
     tech: ["Apigee", "OAuth 2.0", "API Management", "Security", "Azure", "Node.js"],
   },

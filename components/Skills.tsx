@@ -40,6 +40,10 @@ const skillCategories = [
     skills: ["Agile / Scrum", "Performance Optimization", "Team Leadership", "Technical Mentoring", "Code Review"],
   },
   {
+    category: "Monitoring & Observability",
+    skills: ["New Relic", "Dynatrace", "Azure App Insights", "Splunk", "Graylog", "Airbrake"],
+  },
+  {
     category: "AI & Productivity Tools",
     skills: ["Claude Code", "GitHub Copilot"],
   },
