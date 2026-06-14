@@ -5,20 +5,21 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 const experience = [
   {
-    company: "Mr. Cooper (Nationstar Mortgage Services)",
+    company: "Rocket Companies (Formerly Mr. Cooper)",
     role: "Technical Architect — Principal Information Systems Engineer",
     period: "Jul 2018 – Present",
-    location: "Dallas, Texas, USA",
+    location: "Dallas, Texas, USA → Relocating to Chennai, India",
     type: "work",
+    progression: "Progressed through 5 levels: Software Engineer I → Software Engineer II → Senior Software Engineer → Lead Engineer → Principal Architect",
     highlights: [
-      "Serve as Technical Architect and Principal Information Systems Engineer at America's #1 non-banking home loan servicer.",
-      "Architected and executed a zero-downtime migration of on-premises DB servers and 40 scalable, distributed microservices to the cloud — designed the full phased strategy and led end-to-end execution.",
-      "Designed and implemented an enterprise-scale OAuth 2.0 APIM gateway using Apigee, securing API access across 5M+ loans with org-wide authentication standards.",
-      "Led the successful Rocket Mortgage integration — designed API contracts, data mapping, and orchestration workflows between two of the largest US mortgage platforms.",
-      "Architected and launched multi-brand white-label mortgage servicing products on a shared multi-tenant platform, enabling branded digital experiences for partner servicers at scale.",
-      "Spearheaded Forbearance, Payments Solutions, Digital Home Advisor, and One-Time Links as Technical Lead before transitioning to architect role.",
+      "Architected zero-downtime cloud migration using the Strangler Fig pattern — phased 40 interdependent microservices and on-prem DB servers to Azure/GCP, designing rollback safeguards, ADRs, and cross-team execution playbooks",
+      "Designed enterprise-scale OAuth 2.0 API Management gateway via Azure APIM and Apigee — reduced API latency by 80%, governed API security across 5M+ loans, and established org-wide authentication standards adopted across all platforms",
+      "Architected event-driven HELOC and Mortgage Payment solutions — implemented Outbox Pattern for guaranteed at-least-once delivery and designed Kafka-based event streaming pipelines for real-time payment processing at scale",
+      "Led Rocket Mortgage platform integration — defined API contracts, data mapping, and orchestration workflows using Saga pattern to coordinate distributed transactions between two of the largest US mortgage platforms",
+      "Architected multi-brand white-label mortgage servicing platform on a shared multi-tenant architecture; delivered Forbearance, Payments, Digital Home Advisor, and One-Time Links as Technical Lead using CQRS and Circuit Breaker patterns",
+      "Defined reference architectures, led architecture review governance, and authored ADRs adopted across 5+ product teams — establishing engineering standards for microservices, event-driven systems, and cloud-native design",
     ],
-    tech: ["React", "Node.js", "Apigee", "OAuth 2.0", "Azure", "Kubernetes", "Docker", "Microservices", "GCP", "Redis", "Distributed Systems", "Multi-Tenancy"],
+    tech: ["React", "Node.js", "Spring Boot", "Apigee", "OAuth 2.0", "Azure", "Kubernetes", "Docker", "Kafka", "Microservices", "GCP", "Redis", "Distributed Systems", "Multi-Tenancy", "Outbox Pattern", "Saga Pattern", "CQRS", "Strangler Fig"],
   },
   {
     company: "Verizon Data Services India",
@@ -116,7 +117,14 @@ export default function Experience() {
                   <p className="text-sm font-semibold text-blue-600 mb-0.5">
                     {item.company}
                   </p>
-                  <p className="text-xs text-slate-400 dark:text-slate-500 mb-4">{item.location}</p>
+                  <p className="text-xs text-slate-400 dark:text-slate-500 mb-2">{item.location}</p>
+
+                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                  {(item as any).progression && (
+                    <p className="text-xs font-medium italic text-slate-400 dark:text-slate-500 mb-4">
+                      {(item as any).progression}
+                    </p>
+                  )}
 
                   <ul className="space-y-2 mb-4">
                     {item.highlights.map((point, j) => (

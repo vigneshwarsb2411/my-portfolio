@@ -34,12 +34,6 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/40 border border-blue-100 dark:border-blue-800 text-blue-700 dark:text-blue-300 text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
-              <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-              Available for Architecture Consulting
-            </div>
-
             {/* Name */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white leading-tight tracking-tight mb-4">
               Vigneshwar S
@@ -55,9 +49,9 @@ export default function Hero() {
             {/* Location */}
             <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-500 text-sm mb-8">
               <MapPin size={14} />
-              <span>Dallas, Texas, USA</span>
+              <span>Dallas, Texas, USA → Relocating to Chennai, India</span>
               <span className="mx-2 text-slate-200 dark:text-slate-700">|</span>
-              <span>Mr. Cooper</span>
+              <span>Rocket Companies</span>
             </div>
 
             {/* Summary */}
