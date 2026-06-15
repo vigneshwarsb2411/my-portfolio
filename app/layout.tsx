@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Full Stack Technical Architect with 12+ years of experience. Principal Information Systems Engineer at Mr. Cooper, Dallas TX.",
     url: "https://vigneshwar.tech",
     siteName: "Vigneshwar S Balakrishnan",
-    images: [{ url: "/profile.jpg", width: 400, height: 500, alt: "Vigneshwar S Balakrishnan" }],
+    images: [{ url: "/profile-v2.jpg", width: 400, height: 500, alt: "Vigneshwar S Balakrishnan" }],
     type: "website",
   },
   twitter: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Vigneshwar S Balakrishnan | Technical Architect",
     description:
       "Full Stack Technical Architect with 12+ years of experience. Principal Information Systems Engineer at Mr. Cooper, Dallas TX.",
-    images: ["/profile.jpg"],
+    images: ["/profile-v2.jpg"],
   },
   alternates: {
     canonical: "https://vigneshwar.tech",

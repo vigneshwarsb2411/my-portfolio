@@ -134,7 +134,7 @@ export default function Hero() {
 
               <div className="relative w-64 h-80 md:w-72 md:h-96 rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
                 <Image
-                  src="/profile.jpg"
+                  src="/profile-v2.jpg"
                   alt="Vigneshwar S Balakrishnan"
                   fill
                   className="object-cover object-top"
