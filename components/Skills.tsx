@@ -52,7 +52,7 @@ const skillCategories = [
     skills: [
       "MERN Stack Developer — NIIT Stackroute",
       "Prompt Engineering & Programming with OpenAI — Columbia University",
-      "AWS Solutions Architect (In Progress)",
+      "AWS Solutions Architect",
     ],
   },
 ];

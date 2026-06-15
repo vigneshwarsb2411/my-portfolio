@@ -91,14 +91,6 @@ export default function About() {
               >
                 LinkedIn →
               </a>
-              <a
-                href="https://github.com/Vigneshwar2411"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-semibold text-blue-600 hover:underline"
-              >
-                GitHub →
-              </a>
             </div>
           </motion.div>
 

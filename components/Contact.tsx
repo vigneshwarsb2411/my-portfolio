@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, MapPin } from "lucide-react";
+import { Mail, Linkedin, MapPin } from "lucide-react";
 
 const contactLinks = [
   {
@@ -15,12 +15,6 @@ const contactLinks = [
     label: "LinkedIn",
     value: "linkedin.com/in/vsb2411",
     href: "https://www.linkedin.com/in/vsb2411",
-  },
-  {
-    icon: <Github size={18} className="text-blue-600" />,
-    label: "GitHub",
-    value: "github.com/Vigneshwar2411",
-    href: "https://github.com/Vigneshwar2411",
   },
   {
     icon: <MapPin size={18} className="text-blue-600" />,

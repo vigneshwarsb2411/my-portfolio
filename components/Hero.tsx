@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Linkedin, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 
 export default function Hero() {
@@ -81,15 +81,6 @@ export default function Hero() {
             {/* Social links */}
             <div className="flex items-center gap-5">
               <a
-                href="https://github.com/Vigneshwar2411"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-                className="text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors"
-              >
-                <Github size={20} />
-              </a>
-              <a
                 href="https://www.linkedin.com/in/vsb2411"
                 target="_blank"
                 rel="noreferrer"
@@ -156,15 +147,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll cue */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-400 dark:text-slate-600"
-        animate={{ y: [0, 6, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-      >
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <ArrowDown size={14} />
-      </motion.div>
     </section>
   );
 }
